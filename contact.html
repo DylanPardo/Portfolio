@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/69cd5acc0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Me!</title>
+</head>
+<body>
+    <section id="about-me">
+        <nav id="header">
+          
+          <div class="logo">Dylan Pardo</div>
+          <ul class="nav__link--list">
+            <li>
+              <a
+                href="index.html#languages"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Languages</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#projects"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" id="contactbutton" class="nav__link--anchor nav__link--anchor-primary"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="flex flex-1">
+            <div class="about-me__info row">
+              <figure class="about-me__picture--mask">
+                <img
+                  src="./assets/me.jpg"
+                  class="about-me__picture--mask"
+                  alt="Picture of Me!"
+                />
+              </figure><br>
+              <div class="about-me__info--containter">
+                <h1 class="about-me__info--title">
+                  Hey! I'm <span class="text--purple">Dylan Pardo</span> 👋
+                </h1>
+                <p class="about-me__info--para">
+                  I'm a
+                  <strong class="text--purple">frontend software engineer</strong> and <strong class="text--purple">data scientist</strong>
+                  finishing up my Bachelors in Computer Science at Washington University in St. Louis. As I am passionate about technology and adventure, I work hard to always enhance my repertoire while still finding time for fun.
+                </p><br>
+                <div class="about-me__links">
+                  <a href="https://www.linkedin.com/in/dylanpardo/" class="about-me__link"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://github.com/DylanPardo" class="about-me__link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="mailto:dylanpardo@wustl.edu" class="about-me__link"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                  <a href="./assets/Resume.pdf" class="about-me__link"
+                    ><i class="fa fa-file-pdf"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <section id="contact">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                
+                <input type="input" class="form__field" placeholder="Company" name="company" id='company' required />
+
+                <input type="input" class="form__field" placeholder="Message" name="message" id='message' rows="5" required />
+            </div><br>
+            <div>
+                <button id="btn">
+                    <p id="btnText">Submit</p>
+                    <div class="check-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+                </button>
+                <script type="text/javascript">
+                    const btn = document.querySelector("#btn");
+                    const btnText = document.querySelector("#btnText");
+            
+                    btn.onclick = () => {
+                        btnText.innerHTML = "Speak to you soon";
+                        btn.classList.add("active");
+                    };
+                </script>  
+            </div>
+        </section><br><br>
+        <p class="footnote about-me__info--para">Feel free to email me at <strong class="text--purple">dylanpardo@wustl.edu</strong> or reach out to me on <strong class="text--purple">LinkedIn</strong> as well.</p><br<br>
+        <footer>
+            <br><br>
+             
+              <div class="footer__social--list">
+                  <a
+                    href="https://github.com/DylanPardo"
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/dylanpardo/"
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                  <a
+                    href="mailto:dylanpardo@wustl.edu"
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    target="_blank"
+                    >Email</a
+                  >
+                  <a
+                    href="./assets/Resume.pdf"
+                    class="footer__social--link link__hover-effect link__hover-effect--white"
+                    target="_blank"
+                    >Resume</a
+                  >
+                </div>
+                <div class="footer__copyright">Copyright © 2022 Dylan Pardo</div><br>
+            
+            
+          </footer>
+
+</body>
+</html>
